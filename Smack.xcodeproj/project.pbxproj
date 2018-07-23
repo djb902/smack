@@ -15,6 +15,7 @@
 		B0C68C1A2100A2F400F857EB /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C68C182100A2F400F857EB /* SWRevealViewController.m */; };
 		B0C68C1F2100A75400F857EB /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C68C1E2100A75400F857EB /* ChatVC.swift */; };
 		B0C68C212100A76700F857EB /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C68C202100A76700F857EB /* ChannelVC.swift */; };
+		B0C6A2F22105D0CA00FECD6F /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C6A2F12105D0CA00FECD6F /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		B0C68C192100A2F400F857EB /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		B0C68C1E2100A75400F857EB /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		B0C68C202100A76700F857EB /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		B0C6A2F12105D0CA00FECD6F /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 		B0C68C1C2100A71B00F857EB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B0C6A2F12105D0CA00FECD6F /* GradientView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 			files = (
 				B0C68C212100A76700F857EB /* ChannelVC.swift in Sources */,
 				B0C68C1F2100A75400F857EB /* ChatVC.swift in Sources */,
+				B0C6A2F22105D0CA00FECD6F /* GradientView.swift in Sources */,
 				B0C68C05210088B000F857EB /* AppDelegate.swift in Sources */,
 				B0C68C1A2100A2F400F857EB /* SWRevealViewController.m in Sources */,
 			);
