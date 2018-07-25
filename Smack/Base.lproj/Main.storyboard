@@ -218,7 +218,7 @@
                                     <action selector="closePressed:" destination="qgL-Zo-l2u" eventType="touchUpInside" id="R63-wd-0CG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="huq-Me-F15">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="huq-Me-F15" customClass="RoundedButton" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="62.5" y="286" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -229,6 +229,11 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTj-74-0wQ">
                                 <rect key="frame" x="88" y="336" width="199" height="26"/>
@@ -367,7 +372,7 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0A-J9-SEG">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0A-J9-SEG" customClass="RoundedButton" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="62.5" y="597" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -375,9 +380,18 @@
                                     <constraint firstAttribute="height" constant="50" id="k0C-c2-eCi"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                <state key="normal" title="Login">
+                                <state key="normal" title="CreateAccount">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="closePressed:" destination="ZHT-Fs-uNz" eventType="touchUpInside" id="5si-EN-3Wy"/>
+                                    <action selector="createAccntPressed:" destination="ZHT-Fs-uNz" eventType="touchUpInside" id="DnM-wC-Vfz"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create an account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctw-Ei-Fqc">
                                 <rect key="frame" x="104" y="60" width="167" height="23"/>
@@ -403,6 +417,7 @@
                                 </state>
                                 <connections>
                                     <action selector="createAccountBtnPressed:" destination="qgL-Zo-l2u" eventType="touchUpInside" id="JlU-Xq-WKA"/>
+                                    <action selector="pickAvatarPresses:" destination="ZHT-Fs-uNz" eventType="touchUpInside" id="gMl-do-z7C"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIz-C4-1VN">
@@ -413,6 +428,7 @@
                                 </state>
                                 <connections>
                                     <action selector="createAccountBtnPressed:" destination="qgL-Zo-l2u" eventType="touchUpInside" id="ivy-Cc-anr"/>
+                                    <action selector="pickBGColorPressed:" destination="ZHT-Fs-uNz" eventType="touchUpInside" id="hPG-Mh-doN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n3Z-8Y-kBN">
@@ -445,6 +461,10 @@
                         <viewLayoutGuide key="safeArea" id="1p2-Oc-0FQ"/>
                     </view>
                     <connections>
+                        <outlet property="emailTxt" destination="DdE-sX-dt6" id="s1Z-dP-9a9"/>
+                        <outlet property="passTxt" destination="zVP-jk-Uwf" id="Pc3-ux-Nz5"/>
+                        <outlet property="userImg" destination="Izs-hx-Tzl" id="fFO-rO-kaz"/>
+                        <outlet property="usernameTxt" destination="w6L-Ea-9vR" id="MOh-Hd-WEF"/>
                         <segue destination="3d1-cD-caR" kind="unwind" identifier="unwindToChannel" unwindAction="peprpareForUnwindWithSegue:" id="cFW-cf-aFc"/>
                     </connections>
                 </viewController>
