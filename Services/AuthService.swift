@@ -115,7 +115,7 @@ class AuthService {
                 UserDataService.instance.setUserData(id: id, color: color, avatarName: avatarName, email: email, name: name)
                 completion(true)
                 
-                //                    let json = try! JSON(data: data)
+                // let json = try! JSON(data: data)
                 //self.userEmail = json["user"].stringValue
                 //self.authToken = json["token"].stringValue
                 
