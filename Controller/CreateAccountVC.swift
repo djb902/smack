@@ -22,6 +22,7 @@ class CreateAccountVC: UIViewController {
     }
     
     @IBAction func closePressed(_ sender: Any) {
+        //@IBAction func closePressed(_ sender: Any) {
         performSegue(withIdentifier: UNWIND, sender: nil)
     }
     
@@ -31,13 +32,19 @@ class CreateAccountVC: UIViewController {
     @IBAction func pickBGColorPressed(_ sender: Any) {
     }
 
+    
     @IBAction func createAccntPressed(_ sender: Any) {
+    // @IBAction func createAccntPressed(_ sender: Any) {
         guard let email = emailTxt.text , emailTxt.text != "" else {return}
         guard let pass = passTxt.text , passTxt.text != "" else {return}
     
             AuthService.instance.registerUser(email: email, password: pass) { (success) in
                 if success {
-                    print("registered user!")
+                    AuthService.instance.loginUser(email: email, password: pass, completion: { (success) in
+                        if success {
+                            print("Logged in user!", AuthService.instance.authToken)
+                        }
+                    })
                 }
             }
         

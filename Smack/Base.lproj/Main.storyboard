@@ -372,8 +372,8 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0A-J9-SEG" customClass="RoundedButton" customModule="Smack" customModuleProvider="target">
-                                <rect key="frame" x="62.5" y="597" width="250" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0A-J9-SEG" customClass="RoundedButton" customModule="Smack" customModuleProvider="target">
+                                <rect key="frame" x="63.5" y="597" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="d09-6p-zKc"/>
@@ -389,8 +389,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="closePressed:" destination="ZHT-Fs-uNz" eventType="touchUpInside" id="5si-EN-3Wy"/>
-                                    <action selector="createAccntPressed:" destination="ZHT-Fs-uNz" eventType="touchUpInside" id="DnM-wC-Vfz"/>
+                                    <action selector="createAccntPressed:" destination="ZHT-Fs-uNz" eventType="touchUpInside" id="vMZ-wH-NJq"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create an account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctw-Ei-Fqc">
@@ -416,7 +415,6 @@
                                     <color key="titleColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="createAccountBtnPressed:" destination="qgL-Zo-l2u" eventType="touchUpInside" id="JlU-Xq-WKA"/>
                                     <action selector="pickAvatarPresses:" destination="ZHT-Fs-uNz" eventType="touchUpInside" id="gMl-do-z7C"/>
                                 </connections>
                             </button>
@@ -427,7 +425,6 @@
                                     <color key="titleColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="createAccountBtnPressed:" destination="qgL-Zo-l2u" eventType="touchUpInside" id="ivy-Cc-anr"/>
                                     <action selector="pickBGColorPressed:" destination="ZHT-Fs-uNz" eventType="touchUpInside" id="hPG-Mh-doN"/>
                                 </connections>
                             </button>
@@ -435,8 +432,7 @@
                                 <rect key="frame" x="331" y="28" width="28" height="28"/>
                                 <state key="normal" image="closeButton"/>
                                 <connections>
-                                    <action selector="closePressed:" destination="ZHT-Fs-uNz" eventType="touchUpInside" id="pnd-v8-gTS"/>
-                                    <action selector="closePressed:" destination="qgL-Zo-l2u" eventType="touchUpInside" id="tdW-Xx-ni0"/>
+                                    <action selector="closePressed:" destination="ZHT-Fs-uNz" eventType="touchUpInside" id="kyT-c1-lRv"/>
                                 </connections>
                             </button>
                         </subviews>
